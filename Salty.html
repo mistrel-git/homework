@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- Webpage Title -->
+    <title>Dragon Mountain Dungeon</title>
+    ​
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    ​
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    ​
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    ​
+
+    <!-- 구글폰트 -->
+    link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet"
+
+    <style type="text/css">
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .wrap {
+            width: 800px;
+            margin: auto;
+        }
+
+        .img {
+            background-image: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FevppOH%2FbtqFOL92j8P%2FuhcSkk2DKKxbHNcRmk2yAK%2Fimg.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 800px;
+            height: 500px;
+        }
+
+        .info {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            display: inline;
+            font-weight: bold;
+        }
+
+        h5 {
+            display: inline;
+
+        }
+
+        .input-group {
+            text-align: left;
+            margin: auto;
+        }
+
+
+        .order {
+            text-align: center;
+            width: 500px;
+            margin: auto;
+        }
+
+        .orders {
+            margin-top: 100px;
+            button type = "button" class = "btn btn-primary btn-lg btn-block";
+        }
+    </style>
+    <script>
+        function order() {
+            alert('구매해주셔서 감사합니다!');
+        }
+
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <div class="img"></div>
+    <div class="info">
+        <div>
+            <h1>세상엔 두 가지 컴퓨터가 있다!</h1>
+            <h5>가격: 1,000,000원/개</h5>
+        </div>
+        <p></p>
+        <div>
+            <p>하루만 지나도 후회덩어리, 금방 구형이 되는 컴퓨터,
+                2년후 무료 교환! 바꾸면서 더 강해지는 삼보 체인지업!</p>
+        </div>
+        <pre>
+
+
+        </pre>
+        <div>
+            <h1>주문하기</h1>
+            <p></p>
+            <form>
+                <div class="form-group row">
+                    <label for="Input_Name" class="col-sm-2 col-form-label">주문자성함:</label>
+                    <div class="col-sm-10">
+                        <input type="Name" class="form-control" id="Input_Name">
+                    </div>
+                </div>
+                <p></p>
+                <div class="input-group mb-3">
+                    <label for="" class="col-sm-2 col-form-label">수량:</label>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">수량
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="1">1개</a>
+                            <a class="dropdown-item" href="2">2개</a>
+                            <a class="dropdown-item" href="3">3개</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">직접입력</a>
+                        </div>
+                    </div>
+                </div>
+                <p></p>
+                <div class="form-group row">
+                    <label for="Input_Address" class="col-sm-2 col-form-label">주소:</label>
+                    <div class="col-sm-10">
+                        <input type="Address" class="form-control" id="Input_Address">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Input_PhoneNumber" class="col-sm-2 col-form-label">전화번호:</label>
+                    <div class="col-sm-10">
+                        <input type="" class="form-control" id="Input_PhoneNumber">
+                    </div>
+                </div>
+                <div class="order">
+                    <button onclick="order()" type="button" class="btn btn-primary btn-lg btn-block">주문하기</button>
+                </div>
+            </form>
+        </div>
+        <div class="orders">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">이름</th>
+                    <th scope="col">수량</th>
+                    <th scope="col">주소</th>
+                    <th scope="col">전화번호</th>
+                </tr>
+                </thead>
+                <tbody id="orders-box">
+                <tr>
+                    <td>박르탄</td>
+                    <td>10000</td>
+                    <td>르탄시 코딩구 열심동</td>
+                    <td>010-1234-5678</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

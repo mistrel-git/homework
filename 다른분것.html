@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- Webpage Title -->
+    <title>연노네 마카롱</title>
+​
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+​
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+​
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+​
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+​
+    <style type="text/css">
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+​
+        .wrap {
+            width: 700px;
+            margin: auto;
+        }
+​
+        .img {
+            background-image: url('https://img-cf.kurly.com/shop/data/goodsview/20190621/gv20000053770_1.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 500px;
+            height: 400px;
+        }
+​
+        .info {
+            margin-top: 7px;
+            margin-bottom: 7px;
+            width: 500px;
+            padding: 10px;
+            border: lightpink solid;
+            border-radius: 10px;
+        }
+​
+        h1, h5 {
+            display: inline;
+        }
+​
+​
+        .order {
+            margin-left: 5cm;
+        }
+​
+​
+    </style>
+​
+    <script>
+        function 주문하기() {
+            alert('주문이 완료되었습니다!');
+        }
+    </script>
+​
+</head>
+<body>
+<div class="wrap">
+    <div class="img"></div>
+    <div class="info">
+        <h1>연노네 마카롱</h1>
+        <h5>가격: 1,500원/개</h5>
+        <p>이 마카롱은 사실 특별한 힘을 가지고 있어요.<br>
+            마카롱을 먹고 소원을 빌면 짜자잔 뭐든지 이뤄지게 됩니다.<br>
+            (10개 단위로 판매해요;ㅁ;)<br>
+            필링 맛이 아주 좋아요!</p>
+    </div>
+    <div class="wrap">
+​
+        <div class="card-columns">
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://www.paris.co.kr/wp-content/uploads/200217_%E1%84%80%E1%85%A9%E1%84%86%E1%85%A6%E1%84%89%E1%85%A1%E1%86%AB%E1%84%84%E1%85%A1%E1%86%AF%E1%84%80%E1%85%B5%E1%84%86%E1%85%A1%E1%84%8F%E1%85%A1%E1%84%85%E1%85%A9%E1%86%BC_65-1280x1280.jpg"
+                     alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-title"><h4>산딸기 마카롱</h4></p>
+                    <p class="card-text">딸기 필링이 가득</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="주문자 이름"
+                               aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">입력</button>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <select class="custom-select" id="inputGroupSelect04">
+                            <option selected>수량</option>
+                            <option value="1">10개</option>
+                            <option value="2">20개</option>
+                            <option value="3">30개</option>
+                        </select>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">입력</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="주소"
+                               aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">입력</button>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="전화번호"
+                               aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">입력</button>
+                        </div>
+                    </div>
+​
+                </div>
+            </div>
+            <div class="card-colums">
+                <div class="card">
+                    <img class="card-img-top"
+                         src="https://www.paris.co.kr/wp-content/uploads/200217_%E1%84%8B%E1%85%B2%E1%84%8C%E1%85%A1%E1%84%86%E1%85%A1%E1%84%8F%E1%85%A1%E1%84%85%E1%85%A9%E1%86%BC_48-1280x1280.jpg"
+                         alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-title"><h4>유자 마카롱</h4></p>
+                        <p class="card-text">크림치즈 필링이 가득</p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="주문자 이름"
+                                   aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">입력</button>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <select class="custom-select" id="inputGroupSelect04">
+                                <option selected>수량</option>
+                                <option value="1">10개</option>
+                                <option value="2">20개</option>
+                                <option value="3">30개</option>
+                            </select>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">입력</button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="주소"
+                                   aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">입력</button>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="전화번호"
+                                   aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">입력</button>
+                            </div>
+                        </div>
+​
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</div>
+<div class="order">
+    <button onclick="주문하기()" type="button" class="btn btn-outline-warning">주문하기</button>
+</div>
+</div>
+</body>
+</html>
